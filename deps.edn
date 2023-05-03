@@ -1,0 +1,28 @@
+{:paths ["."]
+ :deps {io.github.nextjournal/clerk {:git/sha "ff313943540cbe6918694960937eb2a1653f71c9"}
+        io.github.nextjournal/clerk-slideshow {:git/sha "f9fb86430ebf533bfc9d5cec5bf0a94ed07146f3"}
+
+        org.clojure/clojure {:mvn/version "1.12.0-alpha3"}
+
+        applied-science/edn-datasets {:git/url "git@github.com:applied-science/edn-datasets.git"
+                                      :sha "da3aa56886d4027d7ef6b3f91083e1833d3a4f93"}
+
+        ;; input various external data formats
+        com.github.seancorfield/next.jdbc {:mvn/version "1.2.659"}
+        meta-csv/meta-csv {:mvn/version "0.1.0"}
+        org.xerial/sqlite-jdbc {:mvn/version "3.34.0"}
+        dk.ative/docjure {:mvn/version "1.16.0"}
+        clojusc/wordnet {:mvn/version "1.2.0"}
+        clj-jgit/clj-jgit {:mvn/version "1.0.2" :exclusions [org.slf4j/slf4j-api]}
+
+        org.babashka/cli {:mvn/version "0.5.40"}
+
+        ;; silence log warnings
+        org.slf4j/slf4j-nop {:mvn/version "1.7.36"}}
+
+ :aliases {:nextjournal/clerk {:extra-paths ["datasets"]
+                               :exec-fn nextjournal.clerk/build!
+                               ;; notebooks to be built, accepts globs patterns
+                               :exec-args {:git/url "https://github.com/clojurestream/clerk-workshop"
+                                           :paths-fn user/paths}
+                               :main-opts ["-m" "babashka.cli.exec"]}}}
