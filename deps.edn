@@ -1,5 +1,5 @@
 {:paths ["."]
- :deps {io.github.nextjournal/clerk {:git/sha "ff313943540cbe6918694960937eb2a1653f71c9"}
+ :deps {io.github.nextjournal/clerk {:git/sha "73078a9afc1426f0b9a24f60e271c8687b967251"}
         io.github.nextjournal/clerk-slideshow {:git/sha "f9fb86430ebf533bfc9d5cec5bf0a94ed07146f3"}
 
         org.clojure/clojure {:mvn/version "1.12.0-alpha3"}
