@@ -1,6 +1,6 @@
 ;; # Exercise 1: Exploring Data with Clerk
 
-(ns explore
+(ns ex_1_exploration
   {:nextjournal.clerk/auto-expand-results? true
    :nextjournal.clerk/budget nil}
   (:require [applied-science.edn-datasets :as data]
@@ -11,6 +11,7 @@
   (sort-by str (vals (ns-publics (find-ns 'applied-science.edn-datasets)))))
 
 ;; Explore the metadata on those vars to get a description of what's inside them.
+
 
 ;; ## Table
 ;; Pick one dataset above that interests you and use `clerk/table` to show the dataset as a table.

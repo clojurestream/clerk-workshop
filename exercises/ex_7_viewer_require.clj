@@ -1,7 +1,6 @@
 ;; # Viewer Require
-(ns exercises.ex-6-viewer-require
-  (:require [nextjournal.clerk :as clerk]
-            [nextjournal.clerk.viewer :as v]))
+(ns ex-7-viewer-require
+  (:require [nextjournal.clerk :as clerk]))
 
 ;; In this exercise, we'll use the Clerk's viewer api to dynamically
 ;; load a JavaScript library.
@@ -22,38 +21,3 @@
 
 (clerk/with-viewer emoji-viewer
   "Hallo :smile:")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-^{::clerk/visibility {:code :hide :result :hide}}
-(comment
-  (fn [EmojiConverter]
-    (.replace_colons (new EmojiConverter) value)))
