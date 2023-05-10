@@ -1,6 +1,5 @@
 ;; # Table Viewer
-(ns exercises.ex-2-table-viewer
-  #_{:nextjournal.clerk/visibility {:code :fold}}
+(ns exercises.ex-3-table-viewer
   (:require [nextjournal.clerk :as clerk]))
 
 ;; ### Supported Formats

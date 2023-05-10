@@ -1,4 +1,4 @@
-(ns schedule
+(ns index
   {:nextjournal.clerk/visibility {:code :hide :result :hide}}
   (:require [nextjournal.clerk :as clerk]
             [nextjournal.clerk.parser :as parser]
