@@ -1,5 +1,5 @@
 ;; # Viewer Require
-(ns ex-7-viewer-require
+(ns ex-8-viewer-require
   (:require [nextjournal.clerk :as clerk]))
 
 ;; In this exercise, we'll use the Clerk's viewer api to dynamically

@@ -1,4 +1,4 @@
-(ns exercises.ex-6-visibility
+(ns exercises.ex-7-visibility
   (:require [clojure.string :as str]
             [meta-csv.core :as csv]
             [nextjournal.clerk :as clerk]))
