@@ -6,7 +6,7 @@
 
 ;; ## Pagination
 ;; Modify the following expressions so all elements are shown initially
-(clerk/with-viewer (dissoc viewer/sequential-viewer :page-size)
+(clerk/with-viewer viewer/sequential-viewer
   (range 100))
 
 (def without-pagination
@@ -35,9 +35,9 @@
   {:hello :world})
 
 ;; Fill in a different value for `:transform-fn` so the map and it's keys are preserved.
-(clerk/with-viewer (assoc edn-value-viewer :transform-fn clerk/mark-preserve-keys)
+(clerk/with-viewer {:transform-fn identity}
   {:hello :world})
 
 ;; Fill in a different value for `:transform-fn` so the whole value is preserved.
-(clerk/with-viewer (assoc edn-value-viewer :transform-fn clerk/mark-presented)
+(clerk/with-viewer {:transform-fn identity}
   {:hello :world})
