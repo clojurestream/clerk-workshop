@@ -1,10 +1,10 @@
+;; # Visibility
 (ns exercises.ex-7-visibility
   (:require [clojure.string :as str]
             [meta-csv.core :as csv]
             [nextjournal.clerk :as clerk]))
 
-(clerk/md "# Visibility
-This notebook has a bit of setup code. Use Clerk's visibility settings to fully hide it.
+(clerk/md "This notebook has a bit of setup code. Use Clerk's visibility settings to fully hide it.
 **Hint**: you only need to add two forms to archieve this.")
 
 

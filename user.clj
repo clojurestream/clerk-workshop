@@ -5,7 +5,8 @@
 (clerk/serve! {:browse? true})
 
 (def paths
-  (sort (fs/glob "exercises" "*.clj")))
+  (sort-by #(parse-long (second (re-find #"exercises.ex_(\d+)_" %)))
+           (map str (fs/glob "exercises" "ex_*.clj"))))
 
 (comment
   ;; start with file watcher for these sub-directory paths

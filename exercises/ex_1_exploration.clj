@@ -1,4 +1,4 @@
-;; # Exercise 1: Exploring Data with Clerk
+;; # Exploring Data with Clerk
 
 (ns ex_1_exploration
   {:nextjournal.clerk/auto-expand-results? true

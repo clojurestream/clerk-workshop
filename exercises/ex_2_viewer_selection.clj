@@ -1,7 +1,7 @@
 ;; # Viewer Selection
 
 (ns exercises.ex-2-viewer-selection
-  (:require [exercises.ex-6-visibility :as vis-ex]
+  (:require [exercises.ex-7-visibility :as vis-ex]
             [nextjournal.clerk :as clerk]))
 
 ;; To select a viewer, you can use functions or metadata. In what
